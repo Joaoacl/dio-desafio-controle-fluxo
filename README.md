@@ -1,76 +1,58 @@
-# 🚀 Desafio Controle de Fluxo
+# 🔁 Projeto Desafio Controle de Fluxo
 
-Este é um projeto em Java que simula um contador entre dois valores inteiros fornecidos pelo usuário via terminal. O desafio consiste em aplicar o conhecimento de **controle de fluxo**, como estruturas de repetição e exceções personalizadas.
+Este projeto é uma aplicação de console em Java que simula um contador baseado em dois números inteiros fornecidos pelo usuário. O programa imprime uma sequência numérica conforme a diferença entre os valores, e lança uma exceção personalizada caso o segundo número seja menor que o primeiro.
 
-## 📝 Descrição
+---
 
-O programa solicita dois números inteiros:
+## 🚀 Objetivo
 
-- Se o **segundo número** for **maior** que o primeiro, ele executa um loop que imprime mensagens numeradas a partir de 1 até a diferença entre os dois.
-- Se o **primeiro número** for **maior** que o segundo, é lançada uma exceção personalizada (`ParametrosInvalidosException`), com a mensagem:
+Praticar os conceitos de:
 
-```
-O segundo parâmetro deve ser maior que o primeiro
-```
+- Controle de fluxo com `if`, `for` e `try/catch`
+- Criação de exceções personalizadas em Java
+- Leitura de dados via `Scanner`
+- Organização de código em métodos
+- Estruturação básica de um projeto Java
 
-## 📂 Estrutura do Projeto
+---
 
-```
-DesafioControleFluxo/
-├── Contador.java
-├── ParametrosInvalidosException.java
-└── README.md
-```
+## 📌 Funcionalidades
 
-## 📌 Exemplo de Uso
+O sistema permite:
 
-### ✅ Entrada válida:
-```
-Digite o primeiro parâmetro
-10
-Digite o segundo parâmetro
-15
-```
+- Informar dois números inteiros via terminal
+- Imprimir no console uma contagem com base na diferença entre os números
+- Lançar uma exceção com mensagem personalizada caso os parâmetros estejam inválidos
 
-### 🖨️ Saída:
-```
-Imprimindo o número 1
-Imprimindo o número 2
-Imprimindo o número 3
-Imprimindo o número 4
-Imprimindo o número 5
-```
+---
 
-### ❌ Entrada inválida:
-```
-Digite o primeiro parâmetro
-20
-Digite o segundo parâmetro
-5
-```
+## 🛠️ Tecnologias utilizadas
 
-### ⚠️ Saída:
-```
-O segundo parâmetro deve ser maior que o primeiro
-```
+- Java 17+ (ou compatível)
+- IDE de sua escolha (VSCode, IntelliJ, Eclipse, etc.)
+- Terminal (para entrada e saída de dados)
 
-## 📚 Conceitos aplicados
+---
 
-- Leitura de dados com `Scanner`
-- Controle de fluxo com `for` e `if`
-- Criação e uso de exceção personalizada (`Exception`)
-- Boas práticas de organização de código em Java
-
-## 🛠️ Como executar
+## ▶️ Como executar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/DesafioControleFluxo.git
+git clone https://github.com/Joaoacl/dio-desafio-controle-fluxo.git
 ```
 
-2. Compile e execute com:
+2. Navegue até a pasta do projeto:
+```bash
+cd dio-desafio-controle-fluxo
+```
+
+3. Compile os arquivos:
 ```bash
 javac Contador.java ParametrosInvalidosException.java
+```
+
+4. Execute o programa:
+```bash
 java Contador
 ```
 
